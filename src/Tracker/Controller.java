@@ -98,9 +98,9 @@ public class Controller{
             col_currentDate.setCellValueFactory(new PropertyValueFactory<>("ProdDate"));
             ProductionLog.getColumns().addAll(col_prodNum, col_prodID, col_serialNum, col_currentDate);
 
-
+            String sql = "SELECT * FROM PRODUCT";
             stmt = conn.createStatement();
-            ResultSet rs = stmt.executeQuery("SELECT * FROM PRODUCT");
+            ResultSet rs = stmt.executeQuery(sql);
             while (rs.next()) {
 
                 prodTableList.add(
