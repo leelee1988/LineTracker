@@ -1,0 +1,23 @@
+.button {
+    -fx-text-fill: black;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-background-color: LightGrey;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.button:hover {
+    -fx-background-color: DarkCyan;
+}
+
+.root {
+    -fx-background-color: Beige;
+}
+
+.tab{
+    -fx-background-color: Bisque;
+}
+
+.label{
+    -fx-font-weight: bold;
+}
