@@ -17,7 +17,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="475.0" prefWidth="693.0" stylesheets="@Prod.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Tracker.Controller">
+<VBox prefHeight="475.0" prefWidth="693.0" stylesheets="@../Tracker/Prod.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Tracker.Controller">
     <children>
         <TabPane prefHeight="603.0" prefWidth="640.0" tabClosingPolicy="UNAVAILABLE">
             <tabs>
@@ -78,13 +78,13 @@
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <TableView fx:id="employee_list" layoutX="378.0" layoutY="51.0" prefHeight="379.0" prefWidth="315.0" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="378.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="51.0" />
+                        <TableView fx:id="employee_list" layoutX="361.0" layoutY="51.0" prefHeight="379.0" prefWidth="315.0" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="361.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="51.0" />
                         <TextField fx:id="full_name" layoutX="174.0" layoutY="73.0" />
                         <PasswordField fx:id="passW" layoutX="118.0" layoutY="121.0" />
-                        <Label fx:id="generated_user" layoutX="3.0" layoutY="289.0" text="Generated Username:" />
-                        <Label fx:id="gen_email" layoutX="14.0" layoutY="337.0" text="Generated Email:" />
-                        <Label fx:id="gen_username" layoutX="160.0" layoutY="289.0" text="(Generated Username)" />
-                        <Label fx:id="generated_email" layoutX="148.0" layoutY="337.0" text="(Generated Email)" />
+                        <Label fx:id="generated_user" layoutX="19.0" layoutY="278.0" text="Generated Username:" />
+                        <Label fx:id="gen_email" layoutX="19.0" layoutY="316.0" text="Generated Email:" />
+                        <Label fx:id="gen_username" layoutX="188.0" layoutY="278.0" text="(Generated Username)" />
+                        <Label fx:id="generated_email" layoutX="157.0" layoutY="316.0" text="(Generated Email)" />
                         <Label layoutX="443.0" layoutY="25.0" text="Current Employee" />
                         <Label layoutX="88.0" layoutY="25.0" text="Create New Employee Account" />
                         <Label layoutX="16.0" layoutY="78.0" text="First and Last Name;" />

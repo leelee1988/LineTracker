@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TableView?>
@@ -45,6 +47,8 @@
                                 <Button fx:id="addbutton" layoutX="139.0" layoutY="307.0" mnemonicParsing="false" onAction="#addProduct" text="Add Product" />
                                 <Label layoutX="384.0" layoutY="20.0" text="Existing Products:" />
                                 <TableView fx:id="choices" layoutX="266.0" layoutY="41.0" prefHeight="313.0" prefWidth="371.0" />
+                        <Label fx:id="add_error" layoutX="58.0" layoutY="354.0" text="*Please fill out all fields*" />
+                        <Label fx:id="add_success" layoutX="58.0" layoutY="354.0" text="&quot;Product successfully added" />
                             </children></AnchorPane>
                     </content>
                 </Tab>
@@ -55,8 +59,13 @@
                                 <Label contentDisplay="CENTER" layoutX="154.0" prefHeight="49.0" prefWidth="116.0" text="Choose Product" />
                                 <Label layoutX="437.0" layoutY="144.0" text="Choose Quanity" />
                                 <ComboBox fx:id="quantity_Combobox" layoutX="418.0" layoutY="181.0" prefWidth="150.0" />
-                                <Button layoutX="470.0" layoutY="320.0" mnemonicParsing="false" onAction="#record_production" text="Record Production" />
+                                <Button fx:id="btn_record_production" layoutX="463.0" layoutY="312.0" mnemonicParsing="false" onAction="#record_prod" text="Record Production" />
                                 <ListView fx:id="produce_list" layoutX="25.0" layoutY="43.0" prefHeight="309.0" prefWidth="373.0" />
+                        <Label fx:id="no_manager" layoutX="437.0" layoutY="49.0" text="Account signed in is not manager" />
+                        <Button fx:id="manager" layoutX="501.0" layoutY="11.0" mnemonicParsing="false" onAction="#managementAccess" text="Account Access" />
+                        <Label fx:id="not_selected" layoutX="415.0" layoutY="228.0" text="Please Choose a Product" />
+                        <Label fx:id="production_recorded" layoutX="417.0" layoutY="228.0" text="Successfully added to Production log" />
+                        <Label fx:id="production_error" layoutX="418.0" layoutY="228.0" text="Please Choose a quantity to record" />
                             </children></AnchorPane>
                     </content>
                 </Tab>
@@ -65,6 +74,28 @@
                         <TableView fx:id="ProductionLog" prefHeight="200.0" prefWidth="200.0" />
                     </content>
                 </Tab>
+            <Tab fx:id="Accounts" text="Accounts">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="employee_list" layoutX="378.0" layoutY="51.0" prefHeight="379.0" prefWidth="315.0" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="378.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="51.0" />
+                        <TextField fx:id="full_name" layoutX="174.0" layoutY="73.0" />
+                        <PasswordField fx:id="passW" layoutX="118.0" layoutY="121.0" />
+                        <Label fx:id="generated_user" layoutX="3.0" layoutY="289.0" text="Generated Username:" />
+                        <Label fx:id="gen_email" layoutX="14.0" layoutY="337.0" text="Generated Email:" />
+                        <Label fx:id="gen_username" layoutX="160.0" layoutY="289.0" text="(Generated Username)" />
+                        <Label fx:id="generated_email" layoutX="148.0" layoutY="337.0" text="(Generated Email)" />
+                        <Label layoutX="443.0" layoutY="25.0" text="Current Employee" />
+                        <Label layoutX="88.0" layoutY="25.0" text="Create New Employee Account" />
+                        <Label layoutX="16.0" layoutY="78.0" text="First and Last Name;" />
+                        <Label layoutX="19.0" layoutY="126.0" text="Password:" />
+                        <CheckBox fx:id="manager_account" layoutX="174.0" layoutY="157.0" mnemonicParsing="false" text="Account Access" />
+                        <Label fx:id="not_correct" layoutX="32.0" layoutY="199.0" text="Format of Name (First name, Last name)" />
+                        <Button fx:id="add_account" layoutX="119.0" layoutY="227.0" mnemonicParsing="false" onAction="#generated_info" text="Add account" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
             </tabs>
         </TabPane>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="91.0" prefWidth="640.0" />
