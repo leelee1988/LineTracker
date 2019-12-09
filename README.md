@@ -3,7 +3,7 @@ Project created by Leemarie Collet. Made in the fall of 2019. No prior experienc
 ## Demonstration
 
 ## Documentation
-[docs](https://leelee1988.github.io/LineTracker/docs/html/index.html)
+[docs](https://leelee1988.github.io/LineTracker)
 ## Diagrams
 ![Diagram](docs/TRACKER.png)
 ![Diagram](docs/PUBLIC.png)
