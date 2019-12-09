@@ -8,26 +8,22 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
-            prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="Tracker.LoginPage">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Tracker.LoginPage">
     <children>
-        <Label layoutX="235.0" layoutY="34.0" text="Production Log Tracker">
+        <Label layoutX="162.0" layoutY="27.0" text="Production Log Tracker">
             <font>
-                <Font size="25.0"/>
+                <Font size="25.0" />
             </font>
         </Label>
-        <Label layoutX="235.0" layoutY="63.0" text="Please Login to Continue"/>
-        <Label layoutX="122.0" layoutY="123.0" text="Username:"/>
-        <Label layoutX="122.0" layoutY="183.0" text="Password:"/>
-        <TextField fx:id="userName" layoutX="238.0" layoutY="118.0"/>
-        <PasswordField fx:id="passWord" layoutX="238.0" layoutY="178.0"/>
-        <Button fx:id="login_button" layoutX="275.0" layoutY="231.0" mnemonicParsing="false" onAction="#loginBtn"
-                text="Login"/>
-        <Label fx:id="failedLogin" layoutX="131.0" layoutY="284.0"
-               text="Username or Password Incorrect - Please Try Again" textFill="RED"/>
+        <Label layoutX="187.0" layoutY="63.0" text="Please Login to Continue" />
+        <Label layoutX="122.0" layoutY="123.0" text="Username:" />
+        <Label layoutX="122.0" layoutY="183.0" text="Password:" />
+        <TextField fx:id="userName" layoutX="238.0" layoutY="118.0" />
+        <PasswordField fx:id="passWord" layoutX="238.0" layoutY="178.0" />
+        <Button fx:id="login_button" layoutX="275.0" layoutY="231.0" mnemonicParsing="false" onAction="#loginBtn" text="Login" />
+        <Label fx:id="failedLogin" layoutX="131.0" layoutY="284.0" text="Username or Password Incorrect - Please Try Again" textFill="RED" />
     </children>
     <stylesheets>
-        <URL value="@../Tracker/Prod.css"/>
+        <URL value="@../Tracker/Prod.css" />
     </stylesheets>
 </AnchorPane>
