@@ -8,7 +8,7 @@ Project created by Leemarie Collet. Made in the fall of 2019. No prior experienc
 ![Diagram](docs/TRACKER.png)
 ![Diagram](docs/PUBLIC.png)
 ## Getting Started
-
+To login to the program use the following Username/Password (Admin/123).
 ## Built With
 * Intellij by JetBrains
 * Java Version 8
