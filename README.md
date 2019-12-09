@@ -5,7 +5,7 @@ Project created by Leemarie Collet. Made in the fall of 2019. No prior experienc
 ## Documentation
 
 ## Diagrams
-![Diagram](docs/PACKAGE.png)
+![Diagram](docs/TRACKER.png)
 ![Diagram](docs/PUBLIC.png)
 ## Getting Started
 
