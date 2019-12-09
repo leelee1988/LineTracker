@@ -1,7 +1,7 @@
 # GUI Program Project
 Project created by Leemarie Collet. Made in the fall of 2019. No prior experience with Java GUI or databases. Created for project assignment in fall course COP3003 (Object Oriented Programming). 
 ## Demonstration
-
+![ProjectGIF](docs/Hnet-image.gif)
 ## Documentation
 [docs](https://leelee1988.github.io/LineTracker)
 ## Diagrams
