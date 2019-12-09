@@ -138,7 +138,7 @@ public class Controller {
             col_currentDate.setCellValueFactory(new PropertyValueFactory<>("ProdDate"));
             ProductionLog.getColumns().addAll(col_prodNum, col_prodID, col_serialNum, col_currentDate);
 
-            // Create Table Columns for Employees In Management tab of GUI
+            // Create Table Columns for Employees In Accounts tab of GUI
             TableColumn<EmployeeInfo, String> col_uname = new TableColumn<>("Employee Name");
             col_uname.setCellValueFactory(new PropertyValueFactory<>("name"));
             TableColumn<EmployeeInfo, String> col_username = new TableColumn<>("Username");
@@ -181,10 +181,10 @@ public class Controller {
 
     @FXML
     void generated_info(ActionEvent event) {
-        String f_name = full_name.getText();
-        String p_word = passW.getText();
+        String fir_name = full_name.getText();
+        String pss_word = passW.getText();
         Boolean manager = manager_account.isSelected();
-        Employee employee = new Employee(f_name, p_word, manager);
+        Employee employee = new Employee(fir_name, pss_word, manager);
         if (employee.getUsername().equals("default") || employee.getPassword().equals("pw")) {
             not_correct.setVisible(true);
             gen_email.setVisible(false);
@@ -427,8 +427,6 @@ public class Controller {
                     Timestamp ts = new Timestamp(prodRec.getProdDate().getTime());
                     String sql =
                             "INSERT INTO PRODUCTIONRECORD (PRODUCTION_NUM, PRODUCT_ID , SERIAL_NUM, DATE_PRODUCED, REC_EMPLOYEE ) VALUES (? , ? , ? , ? , ?)";
-                    // Test Case
-                    // System.out.println("THE SQL STATEMNT: " + sql);
                     production_recorded.setVisible(true);
                     try {
                         PreparedStatement stmt = conn.prepareStatement(sql);
